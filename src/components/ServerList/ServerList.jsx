@@ -24,7 +24,7 @@ const ServerList = () => {
             }
         })
             .catch((error) => {
-                if (error === 'Error: Network Error') {
+                if (error) {
                     setConnected(false);
                     setConnection(false);
                 }
